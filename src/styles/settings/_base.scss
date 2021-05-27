@@ -1,0 +1,23 @@
+html {
+  font-family: $fontFamily;
+  font-size: rem($fontSizeBase);
+  line-height: rem($lineHeightSmall);
+
+  box-sizing: border-box;
+
+  color: $mineShaft;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+figure {
+  line-height: 0;
+}
