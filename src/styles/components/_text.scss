@@ -1,0 +1,15 @@
+.text {
+  font-weight: $fontWeightMedium;
+
+  &--large-1 {
+    @include textLarge-1;
+  }
+
+  &--large-2 {
+    @include textLarge-2;
+  }
+
+  &--large-3 {
+    @include textLarge-3;
+  }
+}
