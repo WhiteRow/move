@@ -34,3 +34,21 @@
   animation-direction: $direction;
   animation-timing-function: $animation-timing-function;
 };
+
+@mixin buildText ($fontSize, $fontWeight, $lineHeight) {
+  font-size: rem($fontSize);
+  font-weight: $fontWeight;
+  line-height: rem($lineHeight);
+}
+
+@mixin textLarge-1 () {
+  @include buildText($fontSizeLargeE, $fontWeightBold, $lineHeightLargeE);
+}
+
+@mixin textLarge-2 () {
+  @include buildText($fontSizeLargeP, $fontWeightBold, $lineHeightLargeP);
+}
+
+@mixin textLarge-3 () {
+  @include buildText($fontSizeLarge, $fontWeightBold, $lineHeightLarge);
+}
