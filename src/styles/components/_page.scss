@@ -5,8 +5,9 @@
   &__container {
     width: 100%;
     max-width: rem($contentWidth);
-    padding-top: rem($contentGutterHorizontal);
-    padding-bottom: rem($contentGutterHorizontal);
+    margin: 0 auto;
+    padding-right: rem($contentGutterHorizontal);
+    padding-left: rem($contentGutterHorizontal);
   }
 
   &__content {
