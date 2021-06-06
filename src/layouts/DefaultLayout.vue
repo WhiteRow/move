@@ -1,19 +1,22 @@
 <template>
-  <main class="page">
-    <header>header</header>
+  <div class="page">
+    <Header :variations="headerVariations" />
     <slot />
-  </main>
+  </div>
 </template>
 <script>
-const defaultLayout = 'DefaultLayout';
+import Header from '@/components/Header/index';
 
 export default {
   name: 'DefaultLayout',
 
+  components: {
+    Header,
+  },
+
   computed: {
-    layout() {
-      const layout = this.$route.meta.layout || defaultLayout;
-      return () => import(`@/layouts/${layout}.vue`);
+    headerVariations() {
+      return this.$route.meta.headerVariations || [];
     },
   },
 };
