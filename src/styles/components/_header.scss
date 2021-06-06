@@ -1,0 +1,12 @@
+.header {
+  $containerVerticalGutter: 38px;
+
+  width: 100%;
+
+  &__container {
+    justify-content: space-between;
+
+    padding-top: rem($containerVerticalGutter);
+    padding-bottom: rem($containerVerticalGutter);
+  }
+}
